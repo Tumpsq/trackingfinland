@@ -1,9 +1,82 @@
 .App {
+  position: relative;
   text-align: center;
   width: 100vw;
+  overflow: hidden;
 }
 
 #mapid {
   width: 100%;
   height: 100vh;
+}
+
+.Menu-controller-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.Menu-button {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0%;
+  right: 0px;
+  z-index: 1001;
+  transition: all 0.5s ease;
+  border: none;
+  background-color: grey;
+}
+
+.Menu-button svg {
+  width: 55px;
+  height: 55px;
+  transition: all 0.5s ease;
+}
+
+.Menu-button:focus {
+  outline: none;
+}
+
+.Menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  min-width: 200px;
+  width: 200px;
+  height: 100vh;
+  z-index: 1000;
+  background-color: grey;
+  transition: all 0.5s ease;
+}
+
+.Menu-controller-group-title {
+  user-select: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+.Menu-controller-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Menu-controller-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 15px 15px;
+}
+
+.Menu-controller-name {
+  user-select: none;
+}
+
+.Menu-controller-checkbox {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
