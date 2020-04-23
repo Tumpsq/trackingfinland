@@ -27,6 +27,9 @@
   border: none;
   background-color: #fff;
   border-radius: 4px 0px 0px 4px;
+  -webkit-box-shadow: -3px 3px 4px -1px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: -3px 3px 4px -1px rgba(0, 0, 0, 0.58);
+  box-shadow: -3px 3px 4px -1px rgba(0, 0, 0, 0.58);
 }
 
 .Menu-button svg {
@@ -49,6 +52,9 @@
   z-index: 1000;
   background-color: #fff;
   transition: all 0.5s ease;
+  -webkit-box-shadow: -3px 0px 4px -1px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: -3px 0px 4px -1px rgba(0, 0, 0, 0.58);
+  box-shadow: -3px 0px 4px -1px rgba(0, 0, 0, 0.58);
 }
 
 .Menu-controller-group-title {
@@ -68,7 +74,6 @@
 .Menu-controller-item {
   cursor: pointer;
   display: flex;
-  align-items: center;
   padding: 0px 0px 15px 15px;
 }
 
